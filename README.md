@@ -21,7 +21,7 @@ Output:
 
 ### Useability
 
-|Function:|Time involved|
+|Function:|Result:|
 |---|---|
 |Signup|🟩 Simple|
 |API key setup|🟩 Created on opening account|
