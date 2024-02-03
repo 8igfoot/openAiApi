@@ -1,0 +1,34 @@
+function gCoAi(promptText,mxtks) {
+  var apiKey = '<API Key>';
+  var apiUrl = 'https://api.openai.com/v1/chat/completions';
+
+  var headers = {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + apiKey,
+  };
+
+  var payload = {
+    'model': 'gpt-3.5-turbo', // Replace with 'gpt-3.5-turbo'
+    'messages': [
+      {'role': 'system', 'content': 'You are a helpful assistant that answers questions.'},
+      {'role': 'user', 'content': promptText},
+    ],
+    'max_tokens': mxtks,
+  };
+
+  var options = {
+    'method': 'post',
+    'headers': headers,
+    'payload': JSON.stringify(payload),
+    'muteHttpExceptions': true
+  };
+
+  var response = UrlFetchApp.fetch(apiUrl, options);
+  var responseData = JSON.parse(response.getContentText());
+
+  // Log or use the response data as needed
+  //Logger.log(responseData.choices[0].message.content);
+
+  // Return the generated text
+  return responseData.choices[0].message.content;
+}
