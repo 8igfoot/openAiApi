@@ -27,3 +27,4 @@ Output:
 |API key setup|🟩 Created on opening account|
 |Available code examples|🟨 Some through openAI and on web with small changes|
 |Any issues|🟥 OpenAI sunset davinci, needed to use chat/completions|
+|Execution time|🟨 4661.0 milliseconds|
