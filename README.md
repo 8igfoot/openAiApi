@@ -10,3 +10,11 @@ Where <prompt> is the question text you want to ask OpenAI and 200 represents th
 
 - [Google Apps Scripting](https://www.google.com/script/start/) - Create automations and web services
 - [OpenAI API](https://openai.com/blog/openai-api) - Access AI web service API
+
+### Example output:
+
+`gCoAi('What is bigfoot?',null);`
+
+Output:
+
+>Bigfoot, also known as Sasquatch, is a legendary creature believed to roam the wilderness of North America. Descriptions of Bigfoot vary, but it is usually described as a large, ape-like creature standing between 6 to 9 feet tall and covered in hair. Many reported sightings claim it has a strong smell and emits eerie vocalizations. Despite numerous reported encounters, the existence of Bigfoot remains unproven, with most of the evidence consisting of grainy photographs, footprints, and eyewitness testimonies. The subject of Bigfoot continues to be a topic of interest and debate among enthusiasts and skeptics alike.
